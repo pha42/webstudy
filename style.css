@@ -12,7 +12,7 @@ body {
 
 .button {
   background: #ffffff;
-  width: 10vw;
+  width: 15vw;
   height: 5vh;
   margin: 0 2vw;
   border: #000000 solid 0.5vh;
@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3vh;
+  font-size: 5vw;
   box-shadow: none;
   transition: box-shadow ease-in .1s, background-color ease-out 0.1s;
   cursor: pointer;
