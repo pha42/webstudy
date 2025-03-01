@@ -1,6 +1,11 @@
 body {
   font-family: Jetbrains Mono, monospace;
-  background-color: beige;
+  background: var(--primary-color);
+  animation: bgchange 5s ease-in-out infinite;
+}
+:root {
+  --primary-color: #cac1f3;
+  --secondary-color: #c1d7f3;
 }
 .container {
   display: flex;
@@ -12,7 +17,7 @@ body {
 
 .button {
   background: #ffffff;
-  width: 15vw;
+  width: 15%;
   height: 5vh;
   margin: 0 2vw;
   border: #000000 solid 0.5vh;
@@ -20,7 +25,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5vw;
+  font-size: medium;
   box-shadow: none;
   transition: box-shadow ease-in .1s, background-color ease-out 0.1s;
   cursor: pointer;
@@ -42,4 +47,15 @@ body {
 #no:active {
   box-shadow: none;
   background-color: #ff000065;
+}
+@keyframes bgchange {
+  0% {
+    background: var(--primary-color);
+  }
+  50% {
+    background: var(--secondary-color);
+  }
+  100% {
+    background: var(--primary-color);
+  }
 }
