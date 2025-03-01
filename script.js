@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   yesSound.volume = 0.2;
   noSound.volume = 0.2;
 
-  document.body.addEventListener("click", (event) => {
+  document.body.addEventListener("mousedown", (event) => {
     const clickId = event.target.id;
     switch (clickId) {
       case "yes":
