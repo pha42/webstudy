@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>---</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,16 +11,23 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
   </head>
   <body>
-    <div class="container">
-      <div class="button" id="yes">YES</div>
-      <div class="button" id="no">NO</div>
+    <!-- try this option later -->
+    <!-- <div class="page-button-container">
+      <div class="button" id="yes-or-no"></div>
+      <div class="button" id="numbers"></div>
+      <div class="button" id="rain"></div>
+    </div> -->
+    <div class="navi-container">
+      <h1>Where do you want to go?</h1>
+      <div class="container">
+        <div class="button"><a href="yes-or-no.html">Yes or No</a></div>
+        <div class="button"><a href="numbers.html">Numbers</a></div>
+        <div class="button"><a href="rain.html">Rain</a></div>
+      </div>
     </div>
     <!--OTHER ELEMENTS-->
     <script src="script.js"></script>
-    <audio id="yes" src="/media/yes.mp3"></audio>
-    <audio id="no" src="/media/no.mp3"></audio>
   </body>
 </html>

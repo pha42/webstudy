@@ -3,6 +3,14 @@ body {
   background: var(--primary-color);
   animation: bgchange 5s ease-in-out infinite;
 }
+a {
+  text-decoration: none;
+  color: #000000;
+  border: teal double 0.3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 :root {
   --primary-color: #cac1f3;
   --secondary-color: #c1d7f3;
@@ -14,18 +22,29 @@ body {
   align-items: center;
   height: 100vh;
 }
+.navi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .button {
   background: #ffffff;
-  width: 15%;
-  height: 5vh;
+  width: 10rem;
+  height: 5rem;
   margin: 0 2vw;
-  border: #000000 solid 0.5vh;
+  border: #000000 solid 0.2rem;
   border-radius: 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: medium;
+  font-size: 100%;
   box-shadow: none;
   transition: box-shadow ease-in .1s, background-color ease-out 0.1s;
   cursor: pointer;
